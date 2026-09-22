@@ -21,7 +21,7 @@ void TheAppBar::createWidgets() {
   logo = new QLabel("HTVP");
   logo->setObjectName("appbar__title");
   helpBtn = new QPushButton;
-  addFileBtn = new QPushButton; // Button to add a file into tomeo
+  addFileBtn = new QPushButton; // Button to add a file into HTVP
   toggleSettingsBtn = new QPushButton;
   toggleRecentsBtn = new QPushButton;
 

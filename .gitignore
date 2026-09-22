@@ -1,5 +1,5 @@
-# Prerequisites
-*.d
+# macOS
+.DS_Store
 
 # Compiled Object files
 *.slo
@@ -13,12 +13,9 @@
 
 # Compiled Dynamic libraries
 *.so
+*.so.*
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
 
 # Compiled Static libraries
 *.lai
@@ -31,4 +28,42 @@
 *.out
 *.app
 
-.DS_Store
+# App binary (qmake TARGET)
+HTVP
+Tomeo
+
+# Qt build artifacts
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
+target_wrapper.*
+*.autosave
+*.qmlproject.user
+*.qmlproject.user.*
+CMakeLists.txt.user*
+compile_commands.json
+*creator.user*
+*_qmlcache.qrc
+
+# Prerequisites
+*.d
+
+# Video files, too large
+videos

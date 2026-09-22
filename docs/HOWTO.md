@@ -19,4 +19,4 @@ To access the recents page, click the recents button (list icon). You can then c
 
 ## Technical
 ### How to compile and build
-Open the Qt Creator, and open project `the.pro`. Set the environment to Release and press the run button to build.
+Open the Qt Creator, and open project `VideoPlayer.pro`. Select the Release build configuration and press the run button to build.
