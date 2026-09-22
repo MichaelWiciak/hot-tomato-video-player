@@ -4,7 +4,7 @@
 #include <QString>
 
 /**
- * Utility functions used across Tomeo
+ * Utility functions used across HTVP
  */
 namespace TheUtils {
 /**

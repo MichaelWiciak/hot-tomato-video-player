@@ -4,9 +4,9 @@ A responsive video player I built with a small team for university. It's a Qt de
 
 > Commit history got scrambled as this project was migrated from a private university repo.
 
-[![HTVP Showcase](Images/thumbnail.png)](https://youtu.be/sPTKfwrXlgI)
+[![HTVP Showcase](images/thumbnail.png)](https://youtu.be/sPTKfwrXlgI)
 
-<img src="Images/img1.png" alt="HTVP running in dark mode">
+<img src="images/img1.png" alt="HTVP running in dark mode">
 
 ## The Interesting Bits
 
@@ -95,9 +95,9 @@ Full keyboard control:
 ## Project Structure
 
 ```
-VideoPlayer/
-├── code/
-│   ├── tomeo.cpp            # Main entry point, handles app restart
+hot-tomato-video-player/
+├── src/                     # Qt source
+│   ├── main.cpp             # Main entry point, handles app restart
 │   ├── the_window.h/cpp     # Main window, signal/slot coordinator
 │   ├── the_player.h/cpp     # QMediaPlayer wrapper, playlist, directory loading
 │   ├── the_video.h/cpp      # Video display widget, keyboard handling
@@ -115,7 +115,9 @@ VideoPlayer/
 │   │   ├── the_appbar.qss
 │   │   └── ...
 │   └── icons/               # UI icons
-├── Images/                  # README screenshots
+├── images/                  # README screenshots
+├── docs/                    # Design docs and user research
+├── VideoPlayer.pro          # qmake project
 ├── README.md
 └── LICENSE
 ```
@@ -131,17 +133,16 @@ VideoPlayer/
 ## Building
 
 ```bash
-cd code
-qmake the.pro
+qmake VideoPlayer.pro
 make
-./tomeo    # or tomeo.exe on Windows
+./HTVP    # or HTVP.exe on Windows
 ```
 
 You will need Qt 5.15.2 and the multimedia module installed.
 
 ## More Details
 
-For the full technical breakdown (design decisions, iteration history, user research, and everything else) see [ProjectDocumentation.pdf](./ProjectDocumentation.pdf).
+For the full technical breakdown (design decisions, iteration history, user research, and everything else) see [docs/project-documentation.pdf](./docs/project-documentation.pdf).
 
 ## Iteration Videos
 
